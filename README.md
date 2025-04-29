@@ -27,86 +27,98 @@
 - **Auth**: JWT-based Authentication (planned)
 - **Real-time**: WebSockets (planned)
 
-🔹 Backend Setup
-Go to the backend folder:
+## 🛠️ How to Set Up and Run the Project
 
-bash
-Copy
-Edit
+### 🔹 Prerequisites
+
+Ensure the following are installed on your system:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [MongoDB](https://www.mongodb.com/) (Local or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
+
+---
+
+### 🔹 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/bidnow.git
+cd bidnow
+```
+
+---
+
+## 🔹 Backend Setup
+
+### Go to the backend folder:
+```bash
 cd backend
-Install backend dependencies:
+```
 
-bash
-Copy
-Edit
+### Install backend dependencies:
+```bash
 npm install
-Create a .env file in the backend folder and add:
+```
 
-env
-Copy
-Edit
+### Create a `.env` file in the `backend` folder and add:
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-Start the backend server:
+```
 
-bash
-Copy
-Edit
+### Start the backend server:
+```bash
 npm run dev
-🔹 Frontend Setup
-Go to the frontend folder:
+```
 
-bash
-Copy
-Edit
+---
+
+## 🔹 Frontend Setup
+
+### Go to the frontend folder:
+```bash
 cd ../frontend
-Install frontend dependencies:
+```
 
-bash
-Copy
-Edit
+### Install frontend dependencies:
+```bash
 npm install
-Start the React development server:
+```
 
-bash
-Copy
-Edit
+### Start the React development server:
+```bash
 npm start
-Open your browser and navigate to:
+```
 
-Frontend: http://localhost:3000
+### Open your browser and navigate to:
 
-Backend API: http://localhost:5000/api
+- Frontend: [http://localhost:3000](http://localhost:3000)  
+- Backend API: [http://localhost:5000/api](http://localhost:5000/api)
 
-📦 Dependencies
-🔹 Backend (Express + MongoDB)
-express
+---
 
-mongoose
+## 📦 Dependencies
 
-dotenv
+### 🔹 Backend (Express + MongoDB)
 
-cors
+- express  
+- mongoose  
+- dotenv  
+- cors  
+- bcryptjs  
+- jsonwebtoken  
+- multer *(if handling image uploads)*  
+- morgan *(for logging API requests)*
 
-bcryptjs
+### 🔹 Frontend (React + Tailwind CSS)
 
-jsonwebtoken
+- react  
+- react-router-dom  
+- axios  
+- tailwindcss  
+- swiper *(for carousels/sliders)*  
+- moment or dayjs *(for date formatting)*
 
-multer (if handling image uploads)
-
-morgan (for logging API requests)
-
-🔹 Frontend (React + Tailwind)
-react
-
-react-router-dom
-
-axios
-
-tailwindcss
-
-swiper (for carousels/sliders)
-
-moment or dayjs (for date formatting)
+---
 
