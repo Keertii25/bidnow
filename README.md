@@ -69,7 +69,7 @@ JWT_SECRET=your_jwt_secret_key
 
 ### Start the backend server:
 ```bash
-npm run dev
+nodemon index.js
 ```
 
 ---
@@ -108,8 +108,6 @@ npm start
 - cors  
 - bcryptjs  
 - jsonwebtoken  
-- multer *(if handling image uploads)*  
-- morgan *(for logging API requests)*
 
 ### 🔹 Frontend (React + Tailwind CSS)
 
